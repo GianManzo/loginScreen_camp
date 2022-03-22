@@ -3,13 +3,19 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,28 +23,31 @@
     <title>Camp.in</title>
 </head>
 <body>
-    <header>
-        <img src="./img/logo.svg" alt="Logo">
-    </header>
     <div class="page">
         <aside>
-            <div>
-                <h2> <img src="./img/log-in.svg" alt="img-login"> Faça seu login</h2>
-                <span>Entre com suas informações de cadastro.</span>
+            <div id="box_logo">
+                <img src="./img/logo.svg" alt="Logo">
             </div>
             <form action="">
-                <label>E-mail</label><br>
-                <div>
-                    <img src="./img/mail.svg" alt="img-email">
-                    <input type="email" placeholder="Digite seu e-mail">
+                <div class="login">
+                    <img src="./img/log-in.svg" alt="img-login">
+                    <h2>Faça seu login</h2>
+                </div><br><br>
+                <div id="span1">
+                    <span class="info">Entre com suas informações de cadastro.</span><br>
                 </div>
-                <label>Senha</label>
+                <label class="info">E-mail</label><br>
+                <div id="input_div">
+                    <img  src="./img/mail.svg" alt="img-email">
+                    <input aria-label="email" size="30" class="input" type="email" placeholder="Digite seu e-mail">
+                </div><br><br><br>
+                <label class="info">Senha</label>
                 <div>
                     <img src="./img/lock.svg" alt="lock-passaword">
-                    <input type="password" placeholder="Digite sua senha"> <img src="./img/eye.svg" alt="eyes-password">
+                    <input size="30" type="password" placeholder="Digite sua senha"> <img src="./img/eye.svg" alt="eyes-password">
                 </div>
                 <div>
-                    <input type="checkbox">
+                    <input type="checkbox" checked>
                     <span>Lembre-me</span>
                 </div>
                 <a href="http://google.com">Esqueci minha senha</a> <br>
@@ -46,7 +55,9 @@
                 <span>Não tem uma conta?</span> <a href="http://google.com">Registre-se</a>
             </form>
         </aside>
-        <main></main>
+        <main>
+            <img src="./img/side-image.jpg" alt="img-jeep-camp">
+        </main>
     </div>
 </body>
 </html>

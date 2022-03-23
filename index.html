@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camp.in</title>
 </head>
+
 <body>
     <div class="page">
         <aside>
@@ -37,22 +39,32 @@
                     <span class="info">Entre com suas informações de cadastro.</span><br>
                 </div>
                 <label class="info">E-mail</label><br>
-                <div id="input_div">
-                    <img  src="./img/mail.svg" alt="img-email">
+                <div class="input_login">
+                    <img src="./img/mail.svg" alt="img-email">
                     <input aria-label="email" size="30" class="input" type="email" placeholder="Digite seu e-mail">
-                </div><br><br><br>
-                <label class="info">Senha</label>
+                </div>
                 <div>
+                    <label class="info">Senha</label>
+                </div>
+                <div class="input_login">
                     <img src="./img/lock.svg" alt="lock-passaword">
-                    <input size="30" type="password" placeholder="Digite sua senha"> <img src="./img/eye.svg" alt="eyes-password">
+                    <input class="input" aria-label="password" size="26" type="password" placeholder="Digite sua senha"> <img src="./img/eye.svg"
+                        alt="eyes-password">
+                </div><br><br><br><br>
+                <div class="lembre">
+                    <div id="checked">
+                        <input type="checkbox" checked id="checkbox">
+                        <label for="checkbox">Lembre-me</label> 
+                    </div>
+                    <div>
+                    <a href="http://google.com">Esqueci minha senha</a> <br>
+                    </div>
+                </div><br><br>
+                <button type="submit">ENTRAR</button><br>
+                <div id="criar_conta">
+                    <span>Não tem uma conta?</span>
+                    <a href="http://google.com">Registre-se</a>
                 </div>
-                <div>
-                    <input type="checkbox" checked>
-                    <span>Lembre-me</span>
-                </div>
-                <a href="http://google.com">Esqueci minha senha</a> <br>
-                <button type="submit">Entrar</button><br>
-                <span>Não tem uma conta?</span> <a href="http://google.com">Registre-se</a>
             </form>
         </aside>
         <main>
@@ -60,4 +72,5 @@
         </main>
     </div>
 </body>
+
 </html>

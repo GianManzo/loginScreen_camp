@@ -15,8 +15,12 @@ body {
   width: 100%;
   max-width: 100rem;
 }
-.page {
+.container {
   display: flex;
+}
+#box_logo {
+  margin-bottom: 200px;
+  margin-left: 20px;
 }
 form {
   background: #24221f;
@@ -38,13 +42,8 @@ h2 {
   font-weight: 500;
   font-size: 14px;
 }
-#span1 {
+#box_span1 {
   margin-bottom: 30px;
-}
-.input {
-  background: #24221f;
-  border: 0;
-  outline: none;
 }
 .input_login {
   padding: 10px;
@@ -55,41 +54,44 @@ h2 {
   border-radius: 4px;
   margin-bottom: 15px;
 }
+.input {
+  background: #24221f;
+  border: 0;
+  outline: none;
+}
 .input_login:hover {
   border: 1px solid #ffc632;
 }
-#box_logo {
-  margin-bottom: 200px;
-  margin-left: 20px;
-}
-main {
-  flex-basis: 50%;
-}
-::placeholder{
+::placeholder {
   font-family: "Poppins", sans-serif;
 }
-#checked{
+#box_checked {
   font-family: "Poppins", sans-serif;
-  font-size: 13px;  
+  font-size: 12px;
+  display: flex;
+  gap: 0.5rem;
 }
-.lembre{
+#remember-me {
   display: flex;
   float: left;
   gap: 3.2rem;
   margin-top: -0.9rem;
-  
+  width: 100;
 }
-#checked #checkbox{
+#checked #checkbox {
   cursor: pointer;
 }
-.lembre div a{
+#remember-me div a {
   color: #ffc632;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
 }
-button{
+#remember-me div a:hover{
+  opacity: 0.8;
+}
+button {
   width: 285px;
   border-radius: 5px;
   background: #ffc632;
@@ -100,18 +102,71 @@ button{
   font-size: 17px;
   padding: 13px;
 }
-#criar_conta{
+button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+#create_account {
   text-align: center;
   padding: 15px;
   font-family: "Poppins", sans-serif;
   font-size: 13px;
-  }
-  #criar_conta span{
-    color: #ffc632;
-    text-decoration: none;
-  }
-  #criar_conta a{
-    color: #ffc632;
-    text-decoration: none;
-    font-weight: 700;
-  }
+}
+#create_account span {
+  color: #ffc632;
+  text-decoration: none;
+}
+#create_account a {
+  color: #ffc632;
+  text-decoration: none;
+  font-weight: 700;
+}
+#create_account a:hover{
+  opacity: 0.8;
+}
+/* ---CUSTOMIZING CHECKBOX--- */
+
+input[type="checkbox"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: transparent;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: #afb6c2;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.1em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+input[type="checkbox"] {
+  /* ...existing styles */
+  display: grid;
+  place-content: center;
+  float: left;
+}
+input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms;
+  box-shadow: inset 1em 1em var(--form-control-color);
+}
+input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+input[type="checkbox"]::before {
+  /* ...existing styles */
+  /* Windows High Contrast Mode */
+  background: #ffc632;
+  transform-origin: bottom left;
+}
+  /*-----------*/
+
+main {
+  flex-basis: 50%;
+}

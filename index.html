@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="container">
         <aside>
             <div id="box_logo">
                 <img src="./img/logo.svg" alt="Logo">
@@ -35,13 +35,13 @@
                     <img src="./img/log-in.svg" alt="img-login">
                     <h2>Faça seu login</h2>
                 </div><br><br>
-                <div id="span1">
+                <div id="box_span1">
                     <span class="info">Entre com suas informações de cadastro.</span><br>
                 </div>
                 <label class="info">E-mail</label><br>
                 <div class="input_login">
                     <img src="./img/mail.svg" alt="img-email">
-                    <input aria-label="email" size="30" class="input" type="email" placeholder="Digite seu e-mail">
+                    <input class="input" aria-label="email" size="30" type="email" placeholder="Digite seu e-mail">
                 </div>
                 <div>
                     <label class="info">Senha</label>
@@ -51,9 +51,11 @@
                     <input class="input" aria-label="password" size="26" type="password" placeholder="Digite sua senha"> <img src="./img/eye.svg"
                         alt="eyes-password">
                 </div><br><br><br><br>
-                <div class="lembre">
-                    <div id="checked">
-                        <input type="checkbox" checked id="checkbox">
+                <div id="remember-me">
+                    <div id="box_checked">
+                        <div>
+                            <input type="checkbox" checked id="checkbox">
+                        </div>
                         <label for="checkbox">Lembre-me</label> 
                     </div>
                     <div>
@@ -61,7 +63,7 @@
                     </div>
                 </div><br><br>
                 <button type="submit">ENTRAR</button><br>
-                <div id="criar_conta">
+                <div id="create_account">
                     <span>Não tem uma conta?</span>
                     <a href="http://google.com">Registre-se</a>
                 </div>
